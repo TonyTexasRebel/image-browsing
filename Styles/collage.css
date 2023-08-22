@@ -19,8 +19,18 @@ body {
   background-color: #e8e8e8;
 }
 
+.main-header, .image-browse-container {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
 .main-header {
-  background-color: rgb(209, 209, 209);
+  color: white;
+  background-image: url('https://images.unsplash.com/photo-1692401134669-4622e26ebede?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -500px;
   height: 200px;
   text-align: center;
   overflow: hidden;
@@ -31,11 +41,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 791px;
+  background-image: url('https://images.unsplash.com/photo-1692368156443-23b8e18fb94d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+}
 
+.image-browse-container {
+}
+
+.image-browse > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 .image-browse {
-  background-color: aqua;
   width: 1400px;
   height: 700px;
   position: relative;
@@ -47,6 +73,35 @@ body {
 .next-button, .next-image  {
   width: 40px;
   height: 40px;
+
+}
+
+.next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  background: none;
+  border: none;
+}
+
+.previous-button, .previous-image  {
+  width: 40px;
+  height: 40px;
+
+}
+
+.previous-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background: none;
+  border: none;
+}
+
+.previous-image {
+  transform: rotate(180deg);
 }
 
 
